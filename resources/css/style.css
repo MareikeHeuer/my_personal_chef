@@ -19,6 +19,14 @@ html {
   margin: 0 auto;
 }
 
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
 /* HEADINGS */
 
 h1,
@@ -176,4 +184,54 @@ header {
   width: auto;
   float: left;
   margin-top: 20px;
+}
+
+/* --------------------*/
+/* FEATURES */
+/* --------------------*/
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* --------------------*/
+/* MEALS */
+/* --------------------*/
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+  /* float left will put elements side by side 25% will be 4 pictures per row  */
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  /* Important: width 100% will ensure that the img is exactly as wide as its container  */
+  height: auto;
+  transform: scale(1.15);
+  /* instead of 100% img will be 115%  */
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
