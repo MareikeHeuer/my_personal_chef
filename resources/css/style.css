@@ -13,6 +13,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .clearfix {
   zoom: 1;
 }
@@ -96,6 +101,36 @@ h2:after {
   margin-bottom: 10px;
 }
 
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #ffad05;
+  font-size: 120%;
+  /* align text and icons*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+/* LINKS */
+
+a:link,
+a:visited {
+  color: #ffad05;
+  text-decoration: none;
+  padding: 1px;
+  border-bottom: 1px solid #ffad05;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
 /* BUTTONS */
 .btn:link,
 .btn:visited {
@@ -149,6 +184,21 @@ header {
   height: 100vh;
 }
 
+.banner-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
 .main-nav {
   float: right;
   list-style: none;
@@ -176,21 +226,6 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #ffad05;
-}
-
-.banner-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo {
-  height: 100px;
-  width: auto;
-  float: left;
-  margin-top: 20px;
 }
 
 /* --------------------*/
@@ -288,8 +323,27 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* --------------------*/
+/* CITIES SECTION */
+/* --------------------*/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
 }
