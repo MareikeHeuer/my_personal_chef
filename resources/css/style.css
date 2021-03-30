@@ -133,7 +133,8 @@ a:active {
 
 /* BUTTONS */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   /* 10 top bottom 30 left right  */
@@ -145,7 +146,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #ffad05;
   border: 1px solid #ffad05;
   color: #fff;
@@ -159,12 +161,15 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #e89c05;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"] {
   border: 1px solid #e89c05;
 }
 
@@ -440,4 +445,31 @@ cite img {
   font-size: 30%;
   /* because plan-price is the parent element, it will be 30% of 300   */
   font-weight: 300;
+}
+
+/* --------------------*/
+/* FORMS SECTION */
+/* --------------------*/
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
 }
